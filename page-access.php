@@ -65,8 +65,8 @@
                             </div>
                         <?php endif; ?>
                         <div class="btns">
-                            <a href="<?php echo esc_url(home_url('/')); ?>booking" class="booking-btn bg_a fc">ご予約はこちら</a>
-                            <a href="<?php echo esc_url(home_url('/')); ?>contact" class="contact-btn bg_m fc">お問合わせ</a>
+
+                            <a href="<?php echo esc_url(home_url('/')); ?>contact" style="margin: 0 auto" class="contact-btn bg_a fc">お問合わせ</a>
                         </div>
                     </div>
                 </section>

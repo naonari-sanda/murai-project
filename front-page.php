@@ -127,8 +127,8 @@
                 <div class="formbtn-container">
                     <p class="schedule-attention"><?php echo nl2br(esc_html(get_theme_mod('schedule'))); ?></p>
                     <div class="btns">
-                        <a href="<?php echo esc_url(home_url('/')); ?>booking" class="booking-btn bg_a fc">ご予約はこちら</a>
-                        <a href="<?php echo esc_url(home_url('/')); ?>contact" class="contact-btn bg_m fc">お問合わせ</a>
+
+                        <a href="<?php echo esc_url(home_url('/')); ?>contact" class="contact-btn bg_a fc" style="margin: 0 auto">お問合わせ</a>
                     </div>
                 </div>
             </div>

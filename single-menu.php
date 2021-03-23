@@ -36,8 +36,7 @@
                             <p class="detail"><?php echo nl2br(get_post_meta(($post->ID), 'menu_detail', true)); ?></p>
                         </section>
 
-                        <a href="<?php echo esc_url(home_url('/')); ?>booking" class="booking-btn bg_a fc">予約する</a>
-
+                        <a href="<?php echo esc_url(home_url('/')); ?>contact" class="booking-btn bg_a fc">お問い合わせ</a>
                     </article>
                 <?php endwhile; ?>
             <?php else : ?>
