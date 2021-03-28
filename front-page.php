@@ -122,7 +122,8 @@
             <h2 class="front-main__title">スケジュール</h2>
             <div class="twecolpc-flex">
                 <div class="calendar-container">
-                    <iframe src="https://calendar.google.com/calendar/embed?src=<?php echo esc_html(get_theme_mod("account_id")); ?>%40gmail.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+                    <div style="border: 0" width="800" height="600" frameborder="0" scrolling="no"><?php echo do_shortcode("[my_calendar]"); ?></div>
                 </div>
                 <div class="formbtn-container">
                     <p class="schedule-attention"><?php echo nl2br(esc_html(get_theme_mod('schedule'))); ?></p>
