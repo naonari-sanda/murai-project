@@ -60,7 +60,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/icomoon/style.css">
     <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/css/style.min.css">
-
+    <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/style.css">
     <?php wp_head(); ?>
 
 </head>

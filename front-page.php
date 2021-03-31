@@ -49,14 +49,16 @@
             </div>
         </section>
 
-        <section class="front-concept">
-            <div class="imgcontainer">
-                <img src="<?php echo esc_url(get_theme_mod('concept_img')); ?>" alt="">
-            </div>
-            <div class="front-concept__detail">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1280.000000pt" height="814.000000pt" viewBox="0 0 1280.000000 814.000000" preserveAspectRatio="xMidYMid meet" class="background">
-                    <g transform="translate(0.000000,814.000000) scale(0.100000,-0.100000)" stroke="none">
-                        <path d="M4155 8124 c-1521 -123 -2390 -238 -3095 -410 -353 -87 -673 -210
+        <section class="front-menu">
+            <h2 class="front-main__title">コンセプト</h2>
+            <div class="front-concept">
+                <div class="imgcontainer">
+                    <img src="<?php echo esc_url(get_theme_mod('concept_img')); ?>" alt="">
+                </div>
+                <div class="front-concept__detail">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1280.000000pt" height="814.000000pt" viewBox="0 0 1280.000000 814.000000" preserveAspectRatio="xMidYMid meet" class="background">
+                        <g transform="translate(0.000000,814.000000) scale(0.100000,-0.100000)" stroke="none">
+                            <path d="M4155 8124 c-1521 -123 -2390 -238 -3095 -410 -353 -87 -673 -210
 -823 -318 -193 -137 -270 -297 -222 -462 54 -190 205 -312 565 -457 289 -117
 667 -228 1610 -472 1200 -310 1696 -488 1873 -671 44 -46 46 -66 10 -100 -111
 -103 -339 -190 -1068 -409 -639 -192 -864 -270 -1090 -381 -249 -121 -400
@@ -71,10 +73,11 @@
 -952 192 -1095 223 -1400 299 -281 71 -514 145 -625 200 -90 45 -103 54 -128
 93 -108 169 288 394 1018 576 338 85 831 177 1235 232 192 26 216 34 241 74
 49 81 -10 168 -113 165 -24 -1 -115 -7 -203 -15z" />
-                    </g>
-                </svg>
+                        </g>
+                    </svg>
 
-                <p><?php echo nl2br(esc_html(get_theme_mod('concept_detail'))); ?></p>
+                    <p class="concept"><?php echo nl2br(esc_html(get_theme_mod('concept_detail'))); ?></p>
+                </div>
             </div>
         </section>
         <section class="front-menu">

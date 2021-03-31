@@ -8,3 +8,31 @@ Description:ヨガインストラクター、フリーランストレーナー�
 Version: 1.2.3
 Tags: ヨガ, インストラクター, トレーナー
 */
+
+.front-main h2.front-main__title {
+    margin: 0 auto 80px;
+    font-size: 2rem;
+}
+
+.main .front-concept__detail>p,
+.front-mainlogo>p {
+    font-size: 1.6rem;
+}
+
+.front-main .front-menu {
+    margin-bottom: 100px;
+}
+
+.front-main a.more-btn {
+    display: block;
+    margin-right: auto;
+}
+
+.u-right {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.concept {
+    font-size: 1.6rem !important;
+}
