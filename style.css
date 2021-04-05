@@ -11,12 +11,12 @@ Tags: ヨガ, インストラクター, トレーナー
 
 .front-main h2.front-main__title {
     margin: 0 auto 80px;
-    font-size: 2rem;
+    /* font-size: 2.3rem; */
 }
 
 .main .front-concept__detail>p,
 .front-mainlogo>p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .front-main .front-menu {
@@ -29,10 +29,14 @@ Tags: ヨガ, インストラクター, トレーナー
 }
 
 .u-right {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 60px;
 }
 
 .concept {
     font-size: 1.6rem !important;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
 }

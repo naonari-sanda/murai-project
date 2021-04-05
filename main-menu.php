@@ -10,7 +10,7 @@
     </nav>
 </header>
 
-<header class="header-s bg_m">
+<header class="header-s">
     <div class="header-s__flex">
         <a href="<?php echo esc_url(home_url('/')); ?>" class="header-s__logo">
             <?php if (esc_url(get_theme_mod('logo_img'))) : ?>

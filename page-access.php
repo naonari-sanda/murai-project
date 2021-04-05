@@ -42,25 +42,23 @@
                         <?php endif; ?>
                     </div>
                     <div class="access-info">
-                        <?php if ($name) : ?>
-                            <p class="name"><?php echo $name; ?></p>
-                        <?php endif; ?>
+
                         <?php if ($address) : ?>
                             <div class="address">
-                                <div class="access-iconcontainer bg_m"><?php get_template_part('icons/icon', 'address') ?></div>
+                                <div class="access-iconcontainer icon"><?php get_template_part('icons/icon', 'address') ?></div>
                                 <span>〒<?php echo $zip; ?><br /><?php echo $address; ?></span>
                             </div>
                         <?php endif; ?>
                         <?php if ($tel) : ?>
                             <div class="tel">
-                                <div class="access-iconcontainer bg_m"><?php get_template_part('icons/icon', 'tel') ?></div>
+                                <div class="access-iconcontainer icon"><?php get_template_part('icons/icon', 'tel') ?></div>
 
                                 <a href="tel:090-8537-9734"><?php echo $tel; ?></a>（お困りの方はこちらにお電話ください）</span>
                             </div>
                         <?php endif; ?>
                         <?php if ($email) : ?>
                             <div class="email">
-                                <div class="access-iconcontainer bg_m"><?php get_template_part('icons/icon', 'mail') ?></div>
+                                <div class="access-iconcontainer icon"><?php get_template_part('icons/icon', 'mail') ?></div>
                                 <span><?php echo $email; ?></span>
                             </div>
                         <?php endif; ?>
