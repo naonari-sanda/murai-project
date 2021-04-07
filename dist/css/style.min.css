@@ -958,7 +958,7 @@ img.article_thumbnail {
 }
 
 .front-main .front-schedule .calendar-container {
-    width: 48%
+    width: 65%
 }
 
 @media screen and (max-width:559px) {
@@ -980,7 +980,7 @@ img.article_thumbnail {
 }
 
 .front-main .front-schedule .formbtn-container {
-    width: 48%
+    width: 35%
 }
 
 @media screen and (max-width:559px) {

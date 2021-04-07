@@ -16,7 +16,9 @@
 
     <section class="main-menu"><?php get_template_part('main', 'menu'); ?></section>
 
-    <?php get_template_part('functions/slick', 'slide') ?>
+    <div class="mainvisual">
+        <?php get_template_part('functions/slick', 'slide') ?>
+    </div>
 
 
 
@@ -126,7 +128,7 @@
             <div class="twecolpc-flex">
                 <div class="calendar-container">
 
-                    <div style="border: 0" width="800" height="600" frameborder="0" scrolling="no"><?php echo do_shortcode("[my_calendar]"); ?></div>
+                    <div style="border: 0" width="800" height="auto" frameborder="0" scrolling="no"><?php echo do_shortcode("[my_calendar]"); ?></div>
                 </div>
                 <div class="formbtn-container">
                     <p class="schedule-attention"><?php echo nl2br(esc_html(get_theme_mod('schedule'))); ?></p>
