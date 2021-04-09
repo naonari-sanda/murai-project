@@ -60,6 +60,10 @@
                     wp_reset_query();
                 }; ?>
             </ul>
+            <div class="add_btn_box">
+
+                <a href="<?php echo esc_url(home_url('/')); ?>contact" class="booking-btn bg_a fc add_btn">お問い合わせ</a>
+            </div>
         </main>
     </section>
     <section class="l-960">

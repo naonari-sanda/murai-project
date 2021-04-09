@@ -24,7 +24,7 @@
 
     <main class="front-main l-960">
 
-        <section class="front-news">
+        <section class="front-menu">
             <h2 class="front-main__title">お知らせ</h2>
             <ul class="front-news__items">
                 <?php $args = array(
@@ -80,6 +80,9 @@
 
                     <p class="concept"><?php echo nl2br(esc_html(get_theme_mod('concept_detail'))); ?></p>
                 </div>
+            </div>
+            <div class="u-right">
+                <a href="<?php echo esc_url(home_url('/')); ?>about" class="more-btn">More</a>
             </div>
         </section>
         <section class="front-menu">
@@ -182,13 +185,24 @@
                                 </div>
                             <?php endif; ?>
                         </div>
+
                     </div>
+                </div>
+                <div class="u-right">
+                    <a href="<?php echo esc_url(home_url('/')); ?>access" class="more-btn">More</a>
+                </div>
+            </section>
+            <section class="front-menu">
+                <h2 class="front-main__title">お問い合わせ</h2>
+
+                <div class="add_btn_box">
+
+                    <a href="<?php echo esc_url(home_url('/')); ?>contact" class="booking-btn bg_a fc add_btn">お問い合わせ</a>
+                </div>
             </section>
         <?php endif; ?>
 
-        <div class="l-bottombar">
-            <?php dynamic_sidebar('bottombar'); ?>
-        </div>
+
     </main>
 </section>
 <?php get_footer(); ?>

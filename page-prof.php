@@ -49,7 +49,10 @@
             </section>
 
             <p class="prof-intro"><?php echo nl2br($introduction); ?></p>
+            <div class="add_btn_box">
 
+                <a href="<?php echo esc_url(home_url('/')); ?>contact" class="booking-btn bg_a fc add_btn">お問い合わせ</a>
+            </div>
         </main>
     </section>
 </section>
