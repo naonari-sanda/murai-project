@@ -131,15 +131,15 @@
             <div class="twecolpc-flex">
                 <div class="calendar-container">
 
-                    <div style="border: 0" width="800" height="auto" frameborder="0" scrolling="no"><?php echo do_shortcode("[my_calendar]"); ?></div>
+                    <div style="border: 0" frameborder="0" scrolling="no"><?php echo do_shortcode("[my_calendar]"); ?></div>
                 </div>
-                <div class="formbtn-container">
+                <!-- <div class="formbtn-container">
                     <p class="schedule-attention"><?php echo nl2br(esc_html(get_theme_mod('schedule'))); ?></p>
                     <div class="btns">
 
                         <a href="<?php echo esc_url(home_url('/')); ?>contact" class="contact-btn bg_a fc" style="margin: 0 auto">お問合わせ</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
