@@ -35,10 +35,10 @@
                                             if (!empty($category)) {
                                                 $cat = $category[0];
                                                 $cat_name = $cat->name;
-                                                $cat_id = $cat->cat_ID;
-                                                ?>
+                                                $cat_id = $cat->cat_ID; ?>
                                         <a href="<?php echo esc_url(get_category_link($cat_id)); ?>" class="single-info__cat-link"><?php echo $cat_name; ?></a>
-                                    <?php } ?>
+                                    <?php
+                                            } ?>
                                 </div>
                                 <div class="single-info__date">投稿日：<time class="single-date"><?php the_time("Y.m.j"); ?></time></div>
                             </div>
@@ -64,10 +64,6 @@
                 <?php get_search_form(); ?>
             <?php endif; ?>
         </main>
-        <aside class="sidebar">
-            <?php get_template_part('prof', 'sns'); ?>
-            <?php dynamic_sidebar('sidebar'); ?>
-        </aside>
     </section>
     <section class="l-960">
         <div class="l-bottombar">

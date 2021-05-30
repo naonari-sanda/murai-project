@@ -45,9 +45,7 @@
                 <?php get_search_form(); ?>
             <?php endif; ?>
         </main>
-        <aside class="sidebar">
-            <?php dynamic_sidebar('sidebar'); ?>
-        </aside>
+     
     </section>
     <section class="l-960">
         <div class="l-bottombar">

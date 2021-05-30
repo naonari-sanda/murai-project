@@ -48,6 +48,7 @@
                 </div>
             </section>
 
+            <h3 class="introducion">自己紹介</h3>
             <p class="prof-intro"><?php echo nl2br($introduction); ?></p>
             <div class="add_btn_box">
 

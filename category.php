@@ -45,7 +45,9 @@
                         <?php get_template_part('content', 'not-found'); ?>
                     </div>
                 <?php endif; ?>
-                <?php if (function_exists("pagination")) pagination($wp_query->max_num_pages); ?>
+                <?php if (function_exists("pagination")) {
+    pagination($wp_query->max_num_pages);
+} ?>
             </article>
         </main>
         <aside class="sidebar">

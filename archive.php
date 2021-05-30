@@ -45,13 +45,11 @@
                         <?php get_template_part('content', 'not-found'); ?>
                     </div>
                 <?php endif; ?>
-                <?php if (function_exists("pagination")) pagination($wp_query->max_num_pages); ?>
+                <?php if (function_exists("pagination")) {
+    pagination($wp_query->max_num_pages);
+} ?>
             </article>
         </main>
-        <aside class="sidebar">
-            <?php get_template_part('prof', 'sns'); ?>
-            <?php dynamic_sidebar('sidebar'); ?>
-        </aside>
     </section>
     <section class="l-960">
         <div class="l-bottombar">

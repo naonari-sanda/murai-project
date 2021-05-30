@@ -271,7 +271,7 @@ a:hover {
 
 .l-960 {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto
 }
 
@@ -298,13 +298,13 @@ a:hover {
 
 .l-960.flex>main {
     width: 65%;
-    margin-right: 5%
+    margin: 0 auto;
 }
 
 @media screen and (max-width:959px) {
     .l-960.flex>main {
         width: 68%;
-        margin-right: 2%
+        margin: 0 atho;
     }
 }
 

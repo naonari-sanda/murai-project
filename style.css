@@ -9,40 +9,89 @@ Version: 1.2.3
 Tags: ヨガ, インストラクター, トレーナー
 */
 
-.mainvisual {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
+
+/* 画像スタイル */
+img {
+    filter: saturate(60%);
+
 }
 
+/* メインビジュアル */
+.mainvisual {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+}
+
+.mainvisual img {
+    max-width: 1080px;
+    height: 500px;
+    display: flex;
+    align-content: center;
+    object-fit: cover;
+    filter: saturate(60%);
+    /* filter: blur(1px); */
+}
+
+@media screen and (max-width: 768px) {
+    .mainvisual {
+        margin-top: 0px;
+    }
+}
+
+.front-main .front-concept .imgcontainer:before {
+    box-shadow: inset 1px 1px 6px 0px rgba(0, 0, 0, 0.4),
+        -1px -1px 2px rgba(40, 40, 40, 0.2),
+        1px 1px 2px rgba(255, 255, 255, 1);
+}
+
+
+/* メインページセクションタイトル */
 .front-main h2.front-main__title {
     margin: 0 auto 80px;
     /* font-size: 2.3rem; */
 }
 
+
 .main .front-concept__detail>p,
 .front-mainlogo>p {
     font-size: 1.6rem;
+    margin-bottom: 3rem;
 }
 
 .front-main .front-menu {
     margin-bottom: 100px;
 }
 
-.front-main a.more-btn {
+/* .front-main a.more-btn {
     display: block;
     margin-right: auto;
-}
+} */
 
 .u-right {
     /* text-align: center; */
     margin-top: 60px;
 }
 
+/* メインページ コンセプト */
 .concept {
-    font-size: 1.6rem !important;
+    font-size: 1.7rem !important;
+    font-weight: 540;
 }
 
+.front-concept img {
+    border: solid #fff;
+    border-width: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 5px #333;
+    -webkit-box-shadow: 1px 1px 3px #333;
+    -moz-box-shadow: 1px 1px 3px #333;
+
+}
+
+/* フッター */
 .footer-logo {
     margin-bottom: 30px;
 }
@@ -66,6 +115,46 @@ Tags: ヨガ, インストラクター, トレーナー
     font-weight: 700;
     text-align: center;
     box-shadow: 0 0 3px 0 rgb(0 0 0 / 12%), 0 2px 3px 0 rgb(0 0 0 / 22%);
+}
+
+/* プロフィールページ 経歴 */
+.profile section.prof-detail>.prof-history>p.history {
+    margin: 0 auto;
+    width: 90%;
+    font-size: 1.6rem;
+}
+
+/* プロフィールページ 自己紹介 タイトル */
+.introducion {
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-top: 54px;
+    margin-bottom: 24px;
+}
+
+.profile p.prof-intro {
+    font-size: 1.7rem;
+}
+
+.front-menu .contact-p {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+/* お問い合わせファーム */
+.wpcf7 input,
+#message {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* カレンダー横幅 */
+.front-main .front-schedule .calendar-container {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -93,5 +182,19 @@ Tags: ヨガ, インストラクター, トレーナー
         font-weight: 700;
         text-align: center;
         margin-bottom: 20px
+    }
+
+    .profile section.prof-detail>.prof-history>p.history {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .single-menu .textcontainer {
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .l-960.flex {
+        margin: 20px auto;
     }
 }

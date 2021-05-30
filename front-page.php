@@ -37,13 +37,13 @@
                 if ($posts) : foreach ($posts as $post) : setup_postdata($post); ?>
                         <li><a href="<?php the_permalink(); ?>"><?php the_time('Y.m.d'); ?>：<?php the_title(); ?></a></li>
                     <?php endforeach; ?>
-                <?php else : //記事が無い場合 
+                <?php else : //記事が無い場合
                 ?>
                     <li>
                         <p>お知らせはまだありません。</p>
                     </li>
                 <?php endif;
-                wp_reset_postdata(); //クエリのリセット 
+                wp_reset_postdata(); //クエリのリセット
                 ?>
             </ul>
             <div class="u-right">
@@ -175,7 +175,7 @@
                             <?php if ($tel) : ?>
                                 <div class="tel">
                                     <div class="access-iconcontainer icon"><?php get_template_part('icons/icon', 'tel') ?></div>
-                                    <a href="tel:090-8537-9734"><?php echo $tel; ?>（お困りの方はこちらにお電話ください）</a></span>
+                                    <a href="tel:090-8537-9734"><?php echo $tel; ?></a></span>
                                 </div>
                             <?php endif; ?>
                             <?php if ($email) : ?>
@@ -184,6 +184,10 @@
                                     <span><?php echo $email; ?></span>
                                 </div>
                             <?php endif; ?>
+                            <div class="email">
+                                <div class="access-iconcontainer icon"></div>
+                                <span style="color: red;">体育館の場所が少し分かりずらいので、初めての方は事前に上記の電話番号にお掛け下さい。</span>
+                            </div>
                         </div>
 
                     </div>
@@ -196,7 +200,7 @@
                 <h2 class="front-main__title">お問い合わせ</h2>
 
                 <div class="add_btn_box">
-
+<p class="contact-p">お気軽に相談ください</p>
                     <a href="<?php echo esc_url(home_url('/')); ?>contact" class="booking-btn bg_a fc add_btn">お問い合わせ</a>
                 </div>
             </section>

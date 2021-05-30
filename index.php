@@ -74,10 +74,6 @@
                 <?php wp_reset_postdata(); ?>
             </article>
         </main>
-        <aside class="sidebar">
-            <?php get_template_part('prof', 'sns'); ?>
-            <?php dynamic_sidebar('sidebar'); ?>
-        </aside>
     </section>
     <section class="l-960">
         <div class="l-bottombar">

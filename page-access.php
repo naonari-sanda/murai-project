@@ -53,7 +53,7 @@
                             <div class="tel">
                                 <div class="access-iconcontainer icon"><?php get_template_part('icons/icon', 'tel') ?></div>
 
-                                <a href="tel:090-8537-9734"><?php echo $tel; ?></a>（お困りの方はこちらにお電話ください）</span>
+                                <a href="tel:090-8537-9734"><?php echo $tel; ?></a></span>
                             </div>
                         <?php endif; ?>
                         <?php if ($email) : ?>
@@ -62,6 +62,10 @@
                                 <span><?php echo $email; ?></span>
                             </div>
                         <?php endif; ?>
+                        <div class="email">
+                        <div class="access-iconcontainer icon"></div>
+                                <span style="color: red;">体育館の場所が少し分かりずらいので、初めての方は事前に上記の電話番号にお掛け下さい。</span>
+                            </div>
                         <div class="btns">
 
                             <a href="<?php echo esc_url(home_url('/')); ?>contact" style="margin: 0 auto" class="contact-btn bg_a fc">お問合わせ</a>
