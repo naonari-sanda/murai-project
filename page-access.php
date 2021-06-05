@@ -59,7 +59,7 @@
                         <?php if ($email) : ?>
                             <div class="email">
                                 <div class="access-iconcontainer icon"><?php get_template_part('icons/icon', 'mail') ?></div>
-                                <span><?php echo $email; ?></span>
+                                <span><?php echo $email. '（村井）'; ?></span>
                             </div>
                         <?php endif; ?>
                         <div class="email">

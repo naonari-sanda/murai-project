@@ -22,8 +22,11 @@ img {
     max-width: 1080px;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 80px;
     overflow: hidden;
     box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
 }
 
 .mainvisual img {
@@ -39,14 +42,12 @@ img {
 @media screen and (max-width: 768px) {
     .mainvisual {
         margin-top: 0px;
+        margin-bottom: 20px;
+        box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.8);
     }
 }
 
-.front-main .front-concept .imgcontainer:before {
-    box-shadow: inset 1px 1px 6px 0px rgba(0, 0, 0, 0.4),
-        -1px -1px 2px rgba(40, 40, 40, 0.2),
-        1px 1px 2px rgba(255, 255, 255, 1);
-}
+
 
 
 /* メインページセクションタイトル */
@@ -55,21 +56,18 @@ img {
     /* font-size: 2.3rem; */
 }
 
-
+/* サブタイトル */
 .main .front-concept__detail>p,
 .front-mainlogo>p {
     font-size: 1.6rem;
     margin-bottom: 3rem;
 }
 
+/* メニュー */
 .front-main .front-menu {
     margin-bottom: 100px;
 }
 
-/* .front-main a.more-btn {
-    display: block;
-    margin-right: auto;
-} */
 
 .u-right {
     /* text-align: center; */
@@ -78,8 +76,10 @@ img {
 
 /* メインページ コンセプト */
 .concept {
-    font-size: 1.7rem !important;
-    font-weight: 540;
+    font-size: 1.8rem !important;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .front-concept img {
@@ -91,9 +91,65 @@ img {
 
 }
 
-/* フッター */
-.footer-logo {
+.front-main .front-concept .imgcontainer:before {
+    box-shadow: inset 1px 1px 6px 0px rgba(0, 0, 0, 0.4),
+        -1px -1px 2px rgba(40, 40, 40, 0.2),
+        1px 1px 2px rgba(255, 255, 255, 1);
+}
+
+.imgcontainer {
+    margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .imgcontainer {
+        margin-right: 0px;
+    }
+}
+
+/* お知らせ */
+.front-news__items {
+    box-shadow: none !important;
+    border: 1px solid #333;
+}
+
+/* スケジュール */
+.parent_li {
     margin-bottom: 30px;
+}
+
+.week {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.cheild_li {
+
+    padding-right: 20px;
+}
+
+/* フッター */
+
+footer {
+    background-color: #000;
+}
+
+.footer h1 a {
+    color: #f0f0f1;
+}
+
+.footer-copyright {
+    color: #f0f0f1 !important;
+}
+
+.footer-name a {
+    color: #f0f0f1;
+}
+
+.footer-logo {
+    color: #f0f0f1;
+    margin-bottom: 40px;
 }
 
 .footer-name {

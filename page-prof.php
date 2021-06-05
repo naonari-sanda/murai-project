@@ -21,7 +21,8 @@
 
     <section class="l-960 notfront">
         <main class="profile">
-            <h2 class="koteipage-title"><?php the_title(); ?></h2>
+            <!-- <h2 class="koteipage-title">講師経歴</h2> -->
+            <h2 class="koteipage-title">講師紹介</h2>
 
             <?php
             $name = esc_html(get_theme_mod('name'));
@@ -48,7 +49,8 @@
                 </div>
             </section>
 
-            <h3 class="introducion">自己紹介</h3>
+            <!-- <h3 class="introducion">講師紹介</h3> -->
+            <h3 class="introducion"></h3>
             <p class="prof-intro"><?php echo nl2br($introduction); ?></p>
             <div class="add_btn_box">
 

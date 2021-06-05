@@ -1,4 +1,4 @@
-<footer id="footer" class="footer bg_m">
+<footer id="footer" class="footer">
     <section class="front-mainlogo footer-logo">
         <h1>
             <a href="<?php echo esc_url(home_url('/')); ?>">

@@ -24,30 +24,44 @@
 
     <main class="front-main l-960">
 
-        <section class="front-menu">
-            <h2 class="front-main__title">お知らせ</h2>
-            <ul class="front-news__items">
+    <section class="front-menu">
+            <h2 class="front-main__title">レッスン・クラス</h2>
+            <ul class="front-menu__items">
                 <?php $args = array(
-                    'numberposts' => 5,                //表示（取得）する記事の数
-                    'post_type' => 'news',   //投稿タイプの指定
+                    'numberposts' => 3,
+                    'post_type' => 'menu',
                     'orderby' => 'date',
                     'order' => 'desc'
+
                 );
                 $posts = get_posts($args);
                 if ($posts) : foreach ($posts as $post) : setup_postdata($post); ?>
-                        <li><a href="<?php the_permalink(); ?>"><?php the_time('Y.m.d'); ?>：<?php the_title(); ?></a></li>
+
+                        <li>
+                            <a href="<?php the_permalink(); ?>" class="front-menu__itemlink">
+                                <div class="imgcontainer">
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <?php the_post_thumbnail(); ?>
+                                    <?php else : ?>
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/noimg.png" alt="<?php the_title(); ?>">
+                                    <?php endif; ?>
+                                </div>
+                                <h3 class="front-menu__title"><?php the_title(); ?></h3>
+
+                            </a>
+                        </li>
+
                     <?php endforeach; ?>
-                <?php else : //記事が無い場合
-                ?>
-                    <li>
-                        <p>お知らせはまだありません。</p>
+                <?php else : ?>
+                    <li class="no-news">
+                        <p>メニューはまだありません。</p>
                     </li>
                 <?php endif;
-                wp_reset_postdata(); //クエリのリセット
+                wp_reset_postdata();
                 ?>
             </ul>
             <div class="u-right">
-                <a href="<?php echo esc_url(home_url('/')); ?>news" class="more-btn">More</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>menu" class="more-btn">もっと見る</a>
             </div>
         </section>
 
@@ -82,47 +96,34 @@
                 </div>
             </div>
             <div class="u-right">
-                <a href="<?php echo esc_url(home_url('/')); ?>about" class="more-btn">More</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>about" class="more-btn">もっと見る</a>
             </div>
         </section>
-        <section class="front-menu">
-            <h2 class="front-main__title">レッスン・クラス</h2>
-            <ul class="front-menu__items">
-                <?php $args = array(
-                    'numberposts' => 3,
-                    'post_type' => 'menu',
-                    'orderby' => 'date',
-                    'order' => 'asc'
 
+        <section class="front-menu">
+            <h2 class="front-main__title">お知らせ</h2>
+            <ul class="front-news__items">
+                <?php $args = array(
+                    'numberposts' => 5,                //表示（取得）する記事の数
+                    'post_type' => 'news',   //投稿タイプの指定
+                    'orderby' => 'date',
+                    'order' => 'desc'
                 );
                 $posts = get_posts($args);
                 if ($posts) : foreach ($posts as $post) : setup_postdata($post); ?>
-
-                        <li>
-                            <a href="<?php the_permalink(); ?>" class="front-menu__itemlink">
-                                <div class="imgcontainer">
-                                    <?php if (has_post_thumbnail()) : ?>
-                                        <?php the_post_thumbnail(); ?>
-                                    <?php else : ?>
-                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/noimg.png" alt="<?php the_title(); ?>">
-                                    <?php endif; ?>
-                                </div>
-                                <h3 class="front-menu__title"><?php the_title(); ?></h3>
-
-                            </a>
-                        </li>
-
+                        <li><a href="<?php the_permalink(); ?>"><?php the_time('Y.m.d'); ?>：<?php the_title(); ?></a></li>
                     <?php endforeach; ?>
-                <?php else : ?>
-                    <li class="no-news">
-                        <p>メニューはまだありません。</p>
+                <?php else : //記事が無い場合
+                ?>
+                    <li>
+                        <p>お知らせはまだありません。</p>
                     </li>
                 <?php endif;
-                wp_reset_postdata();
+                wp_reset_postdata(); //クエリのリセット
                 ?>
             </ul>
             <div class="u-right">
-                <a href="<?php echo esc_url(home_url('/')); ?>menu" class="more-btn">More</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>news" class="more-btn">もっと見る</a>
             </div>
         </section>
 
@@ -131,13 +132,23 @@
             <div class="twecolpc-flex">
                 <div class="calendar-container">
 
-                    <div style="border: 0" frameborder="0" scrolling="no"><?php echo do_shortcode("[my_calendar]"); ?></div>
+                <ul class="parent_ul">
+                    <li class="parent_li"><p class="week">月曜日</p><ul class="child_ul">
+                        <li class="child_li">15:30〜16:30  キッズクラス</li>
+                        <li class="child_li">16:30〜17:30  ジュニア① 基礎クラス</li>
+                    </ul></li>
+                    <li class="parent_li"><p class="week">金曜日</p><ul class="child_ul">
+                        <li class="child_li">16:00〜17:00  キッズクラス</li>
+                        <li class="child_li">17:00〜18:00  ジュニア① 基礎クラス</li>
+                    </ul></li>
+                </ul>
+                    <!-- <div style="border: 0" frameborder="0" scrolling="no"><?php /* echo do_shortcode("[my_calendar]"); */?></div> -->
                 </div>
                 <!-- <div class="formbtn-container">
-                    <p class="schedule-attention"><?php echo nl2br(esc_html(get_theme_mod('schedule'))); ?></p>
+                    <p class="schedule-attention"><?php /* echo nl2br(esc_html(get_theme_mod('schedule'))); */?></p>
                     <div class="btns">
 
-                        <a href="<?php echo esc_url(home_url('/')); ?>contact" class="contact-btn bg_a fc" style="margin: 0 auto">お問合わせ</a>
+                        <a href="<?php /* echo esc_url(home_url('/')); */?>contact" class="contact-btn bg_a fc" style="margin: 0 auto">お問合わせ</a>
                     </div>
                 </div> -->
             </div>
@@ -169,7 +180,7 @@
                             <?php if ($address) : ?>
                                 <div class="address">
                                     <div class="access-iconcontainer icon"><?php get_template_part('icons/icon', 'address') ?></div>
-                                    <span>〒<?php echo $zip; ?><br /><?php echo $address; ?></span>
+                                    <span><?php echo $address; ?></span>
                                 </div>
                             <?php endif; ?>
                             <?php if ($tel) : ?>
@@ -181,7 +192,7 @@
                             <?php if ($email) : ?>
                                 <div class="email">
                                     <div class="access-iconcontainer icon"><?php get_template_part('icons/icon', 'mail') ?></div>
-                                    <span><?php echo $email; ?></span>
+                                    <span><?php echo $email . '（村井）'; ?></span>
                                 </div>
                             <?php endif; ?>
                             <div class="email">
@@ -193,7 +204,7 @@
                     </div>
                 </div>
                 <div class="u-right">
-                    <a href="<?php echo esc_url(home_url('/')); ?>access" class="more-btn">More</a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>access" class="more-btn">もっと見る</a>
                 </div>
             </section>
             <section class="front-menu">

@@ -9,17 +9,16 @@
     <?php
     if (is_singular()) { //投稿・固定ページの場合
         if (have_posts()) : while (have_posts()) : the_post();
-                if (get_post_meta(get_the_ID(), 'description', true)) :
+        if (get_post_meta(get_the_ID(), 'description', true)) :
                     echo '<meta name="description" content="' . mb_substr(get_post_meta(get_the_ID(), 'description', true), 0, 100) . '">';
-                    echo "\n";
-                elseif (get_the_excerpt()) :
+        echo "\n"; elseif (get_the_excerpt()) :
                     echo '<meta name="description" content="' . mb_substr(get_the_excerpt(), 0, 100) . '">';
-                    echo "\n"; //抜粋を表示
-                else :
+        echo "\n"; //抜粋を表示
+        else :
                     echo '<meta name="description" content="' . esc_html(get_theme_mod('description', '')) . '">';
-                    echo "\n";
-                endif;
-            endwhile;
+        echo "\n";
+        endif;
+        endwhile;
         endif;
     } else { //単一記事ページページ以外の場合（アーカイブページやホームなど）
         echo '<meta name="description" content="';
@@ -55,6 +54,10 @@
     <script src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/slick/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/slick/slick-theme.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/fontawesome/css/all.min.css">
