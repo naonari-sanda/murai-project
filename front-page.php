@@ -61,7 +61,7 @@
                 ?>
             </ul>
             <div class="u-right">
-                <a href="<?php echo esc_url(home_url('/')); ?>menu" class="more-btn">もっと見る</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>lesson" class="more-btn">もっと見る</a>
             </div>
         </section>
 

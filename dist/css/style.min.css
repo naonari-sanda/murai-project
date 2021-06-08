@@ -788,7 +788,6 @@ img.article_thumbnail {
     width: 100%;
     box-sizing: border-box;
     height: 100px;
-    overflow: scroll
 }
 
 @media screen and (max-width:559px) {

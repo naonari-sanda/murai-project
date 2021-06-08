@@ -29,12 +29,11 @@
                     'post_type' => 'menu',
                     'posts_per_page' => -1,
                     'orderby'          => 'date',
-                    'order'          => 'asc'
+                    'order'          => 'desc'
                 );
                 $post_list = get_posts($args);
                 if ($post_list) {
-                    foreach ($post_list as $post) : setup_postdata($post);
-                ?>
+                    foreach ($post_list as $post) : setup_postdata($post); ?>
 
                         <li class="item">
                             <div>
