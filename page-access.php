@@ -64,7 +64,7 @@
                         <?php endif; ?>
                         <div class="email">
                         <div class="access-iconcontainer icon"></div>
-                                <span style="color: red;">体育館の場所が少し分かりずらいので、初めての方は事前に上記の電話番号にお掛け下さい。</span>
+                                <span style="color: red;">事前にお電話、もしくはメールにてご予約の上お越しください。</span>
                             </div>
                         <div class="btns">
 

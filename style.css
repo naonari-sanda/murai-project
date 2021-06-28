@@ -121,9 +121,13 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    .imgcontainer {
+    .front-concept .imgcontainer {
         margin-right: 0px;
         margin-bottom: 50px !important;
+    }
+
+    .imgcontainer {
+        margin-right: 0px;
     }
 }
 

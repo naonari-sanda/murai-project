@@ -101,6 +101,25 @@
         </section>
 
         <section class="front-menu">
+        <h2 class="front-main__title">講師紹介</h2>
+            <div class="profile">
+            <section class="prof-detail">
+                    <div class="imgcontainer">
+                            <img src="<?php echo esc_url(get_theme_mod('prof_img')) ?>" alt="<?php bloginfo(esc_html(get_theme_mod('name'))); ?>">
+                    </div>
+                    <div class="prof-history">
+                            <p class="name"><?php echo esc_html(get_theme_mod('name')) ?></p>
+                        <p class="history"><?php echo nl2br(esc_html(get_theme_mod('history'))); ?></p>
+                    </div>
+                </section>
+            </div>
+            <div class="u-right">
+                <a href="<?php echo esc_url(home_url('/')); ?>about" class="more-btn">もっと見る</a>
+            </div>
+        </section>
+
+
+        <section class="front-menu">
             <h2 class="front-main__title">お知らせ</h2>
             <ul class="front-news__items">
                 <?php $args = array(
@@ -197,7 +216,7 @@
                             <?php endif; ?>
                             <div class="email">
                                 <div class="access-iconcontainer icon"></div>
-                                <span style="color: red;">体育館の場所が少し分かりずらいので、初めての方は事前に上記の電話番号にお掛け下さい。</span>
+                                <span style="color: red;">事前にお電話、もしくはメールにてご予約の上お越しください。</span>
                             </div>
                         </div>
 
