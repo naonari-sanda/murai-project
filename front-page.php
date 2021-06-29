@@ -230,7 +230,7 @@
                 <h2 class="front-main__title">お問い合わせ</h2>
 
                 <div class="add_btn_box">
-<p class="contact-p">お気軽に相談ください</p>
+<p class="contact-p">お気軽にご相談ください</p>
                     <a href="<?php echo esc_url(home_url('/')); ?>contact" class="booking-btn bg_a fc add_btn">お問い合わせ</a>
                 </div>
             </section>

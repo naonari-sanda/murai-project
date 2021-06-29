@@ -36,7 +36,7 @@
                                                 $cat = $category[0];
                                                 $cat_name = $cat->name;
                                                 $cat_id = $cat->cat_ID; ?>
-                                        <a href="<?php echo esc_url(get_category_link($cat_id)); ?>" class="single-info__cat-link"><?php echo $cat_name; ?></a>
+                                        <!-- <a href="<?php echo esc_url(get_category_link($cat_id)); ?>" class="single-info__cat-link"><?php echo $cat_name; ?></a> -->
                                     <?php
                                             } ?>
                                 </div>

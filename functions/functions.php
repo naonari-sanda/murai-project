@@ -11,9 +11,9 @@ if (!function_exists('output_category_link')) {
         $catId = $cat->cat_ID;
         $catName = esc_attr($cat->cat_name);
         $catLink = esc_url(get_category_link($catId));
-        if ($catLink && $catName) {
-            echo '<a class="article-each-cat bg_m fc" href="' . $catLink . '">' . $catName . '</a>';
-        }
+        // if ($catLink && $catName) {
+        //     echo '<a class="article-each-cat bg_m fc" href="' . $catLink . '">' . $catName . '</a>';
+        // }
     }
 }
 
@@ -33,7 +33,9 @@ function g_calender()
 function get_archive_title()
 {
     //アーカイブページじゃない場合、 false を返す
-    if (!is_archive()) return false;
+    if (!is_archive()) {
+        return false;
+    }
 
     //日付アーカイブページなら
     if (is_date()) {
@@ -69,9 +71,7 @@ function theme_customize_css()
     $accent_blue = hexdec(substr($accent, 5, 2));
     $accent_rgb = $accent_red . "," . $accent_green . "," . $accent_blue;
     $accent_dark = ($accent_red - 50) . "," . ($accent_green - 50) . "," . ($accent_blue - 50);
-    $accent_light = ($accent_red + 100) . "," . ($accent_green + 100) . "," . ($accent_blue + 100);
-
-    ?>
+    $accent_light = ($accent_red + 100) . "," . ($accent_green + 100) . "," . ($accent_blue + 100); ?>
     <style type="text/css">
         .bg_m {
             background-color: <?php echo $main; ?>;
@@ -347,5 +347,6 @@ function theme_customize_css()
 
         }
     </style>
-<?php }
+<?php
+}
 add_action('wp_head', 'theme_customize_css');
