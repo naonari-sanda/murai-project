@@ -56,7 +56,7 @@
                         ?>
                 <?php else : ?>
                     <div class="notfound-articles">
-                        <?php get_template_part('content', 'not-found'); ?>
+                        <?php get_template_part('nothing', 'blog'); ?>
                     </div>
                 <?php endif; ?>
                 <div class="pagination3">
