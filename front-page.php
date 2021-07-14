@@ -120,6 +120,18 @@
 
 
         <section class="front-menu">
+        <h2 class="front-main__title front-insta"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/320px-Instagram.png" alt=""></h2>
+            <div class="profile">
+            
+            <?php echo do_shortcode("[instagram-feed num=3]"); ?>
+            </div>
+            <div class="u-right">
+                <!-- <a href="<?php echo esc_url(home_url('/')); ?>about" class="more-btn">もっと見る</a> -->
+            </div>
+        </section>
+
+
+        <section class="front-menu">
             <h2 class="front-main__title">お知らせ</h2>
             <ul class="front-news__items">
                 <?php $args = array(

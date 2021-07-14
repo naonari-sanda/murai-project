@@ -44,6 +44,9 @@
         </script>
     <?php endif; ?>
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/favicon.ico">
+
     <!-- twitter card -->
     <?php require('twitter-card.php'); ?>
 
